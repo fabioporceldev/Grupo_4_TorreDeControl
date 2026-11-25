@@ -1,9 +1,9 @@
 # GRUPO_4_TorreDeControl — Memoria
 
-**Equipo de Torre de Control (Aeropuerto con Emergencias)**
-Integrantes: Iván, Alberto y Fabio — 2º DAM, PSP, UT2
-Repositorio Git: `<PEGAR AQUÍ EL ENLACE AL REPOSITORIO>`
-Tablero Trello: `<PEGAR AQUÍ EL ENLACE AL TABLERO>`
+**Equipo de Torre de Control (Aeropuerto con Emergencias)**\
+Integrantes: Iván, Alberto y Fabio — 2º DAM, PSP, UT2\
+Repositorio Git: https://github.com/fabioporceldev/Grupo_4_TorreDeControl\
+Tablero Trello: https://trello.com/b/O6XuzVoZ/grupo4torredecontrol
 
 ---
 
@@ -118,22 +118,61 @@ Cada aterrizaje (normal o de emergencia) suma 1 al contador, y cada despegue lo 
 
 ## 9. BITÁCORA
 
-### Día 1 — 25/11/2026
+Sprint de 5 días. El día 1 se documenta con una captura del tablero Trello al empezar y otra al terminar. Del día 2 al 5, con una captura al final del día.
 
-**Inicio del día:** *(captura del tablero Trello)*
+### Día 1 — miércoles 25/11/2026
 
-- **Iván:** …
-- **Alberto:** creación del tablero Trello y primera versión del programa en IntelliJ.
-- **Fabio:** creación del repositorio `GRUPO_4_TorreDeControl` en GitHub y compartirlo con la profesora.
+**Inicio del día:** tablero recién creado. Las 9 tarjetas del sprint (T1–T9) están en *Backlog* y las demás listas, vacías.
 
-**Fin del día:** *(captura del tablero Trello)*
+![Trello – Día 1, inicio](bitacora/dia1_inicio.png)
 
-### Día 2 — __/__/2026
+**Trabajo realizado:**
 
-**Inicio del día:** *(captura)*
+- **Todo el equipo:** lectura y análisis del enunciado, identificación de los requisitos y reparto de tareas. Se detecta el problema de inanición que provoca una cola de prioridad simple (T1).
+- **Alberto:** crea el tablero Trello con las listas Scrum, las etiquetas y las 9 tarjetas del sprint (T2). Diseña la solución eligiendo `ReentrantLock` justo, `Condition` y tres colas FIFO (T3). Programa en IntelliJ la primera versión completa del simulador: `TipoOperacion`, `Log`, `Avion`, `TorreDeControl`, `GestorPistas` y `GestorMeteo` (T4, T5 y T6). Hace el primer commit y push desde VS Code.
+- **Iván:** participa en el análisis del enunciado y en el reparto de tareas (T1).
+- **Fabio:** crea el repositorio `Grupo_4_TorreDeControl` en GitHub, da permisos de push al equipo y lo comparte (T2).
 
-- **Iván:** …
+**Problemas del día:**
+
+- IntelliJ marcaba las clases en rojo porque el proyecto no tenía JDK definido. Se solucionó con *Setup SDK*, descargando el JDK.
+- El commit fallaba con *"Author identity unknown"* en el ordenador de clase. Se solucionó con `git config user.name` y `git config user.email`, sin `--global` para no dejar los datos en un equipo compartido.
+- El proyecto estaba dentro de la carpeta DAM2, que ya era un repositorio Git. Se creó un repositorio propio en la carpeta del proyecto (`git init`) enlazado al repositorio del grupo.
+
+**Estado al terminar:** T1–T4 en *Hecho*; T5 y T6 en *En revisión* (código terminado, pendiente de revisión del equipo); T8 *En curso*; T7 y T9 en *Por hacer*.
+
+**Fin del día:**
+
+![Trello – Día 1, fin](bitacora/dia1_fin.png)
+
+### Día 2 — dd/mm/2026
+
 - **Alberto:** …
+- **Iván:** …
 - **Fabio:** …
 
-**Fin del día:** *(captura)*
+**Fin del día:** *(captura pendiente)*
+
+### Día 3 — dd/mm/2026
+
+- **Alberto:** …
+- **Iván:** …
+- **Fabio:** …
+
+**Fin del día:** *(captura pendiente)*
+
+### Día 4 — dd/mm/2026
+
+- **Alberto:** …
+- **Iván:** …
+- **Fabio:** …
+
+**Fin del día:** *(captura pendiente)*
+
+### Día 5 — dd/mm/2026
+
+- **Alberto:** …
+- **Iván:** …
+- **Fabio:** …
+
+**Fin del día:** *(captura pendiente)*
